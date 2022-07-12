@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+    <title>
+        My website
+    </title>
+</head>
+<body>
+<header>
+    <div class="container">
+        <h1 class="heading">rohit's website</h1>
+        <strong><nav>
+            <ul class=""menu>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+            </ul>
+        </nav></strong>
+    </div>
+    <div class="contain">
+        {%block content%}
+        <p>this is layout page</p>
+        {%endblock%}
+    </div>
+</header>
+
+
+</body>
+</html>
